@@ -7,4 +7,5 @@ import { arrProduct } from '../ProductList';
 })
 export class ProductComponent {
    productList:any[]=arrProduct
+   
 }

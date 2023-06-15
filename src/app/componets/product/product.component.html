@@ -1,4 +1,4 @@
-<h2 class="text-center m-auto my-3 ">products <i class="bi bi-pencil-fill"></i> </h2>
+<h2 class="text-center m-auto my-3 ">products </h2>
 
 <div class="container-fluid row justify-content-center ">
 
@@ -11,7 +11,7 @@
       <h5 class="card-title">price : {{product.price}}</h5>
       <h5 class="card-title d-flex justify-content-between">
         <i class="bi bi-pencil-fill text-warning"></i>
-        <i class="bi bi-eye text-success"></i>
+        <i class="bi bi-eye text-success" [routerLink]="['/product',product.id]"></i>
         <i class="bi bi-trash3 text-danger"></i>
       </h5>
 
