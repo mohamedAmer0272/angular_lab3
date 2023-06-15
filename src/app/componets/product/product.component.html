@@ -1,0 +1,23 @@
+<h2 class="text-center m-auto my-3 ">products <i class="bi bi-pencil-fill"></i> </h2>
+
+<div class="container-fluid row justify-content-center ">
+
+  <div class="card col-3" style="width: 18rem;" *ngFor="let product of productList">
+    <img [src]="product.img" class="card-img-top " alt="...">
+    <div class="card-body m-auto">
+      <h5 class="card-title">ID : {{product.id}}</h5>
+      <h5 class="card-title">name : {{product.name}}</h5>
+      <h5 class="card-title">Quantity : {{product.quantity}}</h5>
+      <h5 class="card-title">price : {{product.price}}</h5>
+      <h5 class="card-title d-flex justify-content-between">
+        <i class="bi bi-pencil-fill text-warning"></i>
+        <i class="bi bi-eye text-success"></i>
+        <i class="bi bi-trash3 text-danger"></i>
+      </h5>
+
+
+    </div>
+  </div>
+
+
+</div>
