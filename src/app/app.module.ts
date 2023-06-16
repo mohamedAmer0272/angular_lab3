@@ -7,10 +7,10 @@ import { HomeComponent } from './componets/home/home.component';
 import { LoginComponent } from './componets/login/login.component';
 import { ProductComponent } from './componets/product/product.component';
 import { NavComponent } from './componets/nav/nav.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddProductComponent } from './componets/add-product/add-product.component';
 import { ProductDetailsComponent } from './componets/product-details/product-details.component';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,9 @@ import { ProductDetailsComponent } from './componets/product-details/product-det
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
